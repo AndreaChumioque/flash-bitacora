@@ -49,30 +49,54 @@
             <i class="large material-icons">mode_edit</i>
           </a>
           <ul>
-            <li><a class="btn-floating cyan modal-trigger" href="#modal1"><i class="material-icons">message</i></a></li>
-            <li><a class="btn-floating blue darken-4"><i class="material-icons">add_a_photo</i></a></li>
-            <li><a class="btn-floating teal lighten-2"><i class="material-icons">perm_contact_calendar</i></a></li>
-            <li><a class="btn-floating yellow"><i class="material-icons">video_library</i></a></li>
+            <li id="pub-text">
+              <a class="btn-floating cyan modal-trigger" href="#modal1">
+                <i class="material-icons">message</i>
+              </a>
+            </li>
+            <li id="pub-img">
+              <a class="btn-floating blue darken-4">
+                <i class="material-icons">add_a_photo</i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-floating teal lighten-2">
+                <i class="material-icons">perm_contact_calendar</i>
+              </a>
+            </li>
+            <li>
+              <a class="btn-floating yellow">
+                <i class="material-icons">video_library</i>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
       <div id="modal1" class="modal">
         <div class="modal-content">
-          <div class="input-field">
-              <input id="title" type="text" class="validate">
-              <label for="title">Titulo</label>
+          <div class="row">
+            <form class="col s12">
+              <div class="input-field col s12">
+                <input id="title" type="text" class="validate">
+                <label for="title">Titulo</label>
+              </div>
+              <div id="pub-content" class="content">
+                <!-- <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Textarea</label>
+                </div> -->
+              </div>
+            </form>
           </div>
-          <div id="content" class="content">
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close btn waves-effect waves-light">Publicar
+              <i class="material-icons right">send</i>
+            </a>
           </div>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Publicar</a>
-          <!--<a href="#!" class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>-->
         </div>
       </div>
-        </div>
-      </div>
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
